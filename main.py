@@ -31,24 +31,45 @@
 #
 #
 #
-# for i in number:
-#     if number[1] > number[2] > number[3] and number[3] > number[4]:
-#         print(number, sep="\n")
+# for i in range(len(number) - 1):
+#     if number[i] > number[i + 1]:
+#         number[i], number[i + 1] = number[i + 1], number[i]
+#
+# print(number)
+
+
+# ...
+# Exercise 5
+# text = input("Enter the 7 character :: ")
+#
+# cat_count = text.count("cat")
+#
+# print(f"The 'Cat' sense appears {cat_count} times")
+
+
+# ...
+# Exercise 6
+# txt = input("Enter the 5 character :: ")
+#
+# n = len(txt)
+#
+# for i in range(n):
+#     shifted = txt[-i:] + txt[:-i]
+#     print(shifted)
 
 
 # ...
 # Exercise 7
-text = input("Enter the 7 character :: ")
 
-
-b = 0
-
-if "cat" in text:
-    b += 1
-    print(b)
-# for i in a:
-#     b += i
-#     print(b)
+# print("3x3 massiv uchun 9 ta sonni kiriting (masalan: 1 2 3 4 5 6 7 8 9):")
+#
+# elements = list(map(int, input().split()))
+#
+# matrix = [elements[i:i+3] for i in range(0, len(elements), 3)]
+#
+# main_diagonal_sum = sum(matrix[i][i] for i in range(3))
+#
+# print("Asosiy diagonal elementlarining yig'indisi:", main_diagonal_sum)
 
 
 
